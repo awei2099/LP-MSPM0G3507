@@ -1,0 +1,62 @@
+[
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Bump.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/I2C.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/InputCapture.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Motor.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/PWM1.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/RSLKmain.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SSD1306.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_03_00_07/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/RSLK/ticlang/startup_mspm0g3507_ticlang.c"
+   }
+]

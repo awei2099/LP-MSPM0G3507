@@ -1,0 +1,22 @@
+[
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug\" -I\"/source/third_party/CMSIS/Core/Include\" -I\"/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug\" -I\"/source/third_party/CMSIS/Core/Include\" -I\"/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug\" -I\"/source/third_party/CMSIS/Core/Include\" -I\"/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/ToggleLEDmain.c"
+   },
+   {
+      "directory" : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug",
+      "command"   : "clang++ -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug\" -I\"/source/third_party/CMSIS/Core/Include\" -I\"/source\" -D__MSPM0G3507__ -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2011/ccs/tools/compiler/ti-cgt-armllvm_4.0.2.LTS/include/c\" -I\"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/Debug/syscfg\" -xc",
+      "file"      : "C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/ToggleLED/ticlang/startup_mspm0g3507_ticlang.c"
+   }
+]
