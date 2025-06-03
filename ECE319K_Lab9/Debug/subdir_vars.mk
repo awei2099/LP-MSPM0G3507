@@ -9,20 +9,20 @@ CMD_SRCS += \
 ../mspm0g3507.cmd 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC1.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Arabic.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC5.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC1.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Arabic.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC5.c \
 ../LED.c \
 ../Lab9Main.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c \
 ../SmallFont.c \
 ../Sound.c \
 ../Switch.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c 
 
 C_DEPS += \
 ./ADC1.d \
@@ -89,19 +89,19 @@ C_DEPS__QUOTED += \
 "Timer.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC1.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Arabic.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC5.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC1.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Arabic.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC5.c" \
 "../LED.c" \
 "../Lab9Main.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c" \
 "../SmallFont.c" \
 "../Sound.c" \
 "../Switch.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c" 
 
 

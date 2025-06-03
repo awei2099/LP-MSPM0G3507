@@ -6,19 +6,19 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC5.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC5.cpp \
 ../LED.cpp \
 ../Lab9HMain.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SlidePot.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SlidePot.cpp \
 ../SmallFont.cpp \
 ../Sound.cpp \
 ../Switch.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.cpp 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.cpp 
 
 CMD_SRCS += \
 ../mspm0g3507.cmd 
@@ -84,18 +84,18 @@ CPP_DEPS__QUOTED += \
 "Timer.d" 
 
 CPP_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC5.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC5.cpp" \
 "../LED.cpp" \
 "../Lab9HMain.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SlidePot.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SlidePot.cpp" \
 "../SmallFont.cpp" \
 "../Sound.cpp" \
 "../Switch.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.cpp" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.cpp" 
 
 

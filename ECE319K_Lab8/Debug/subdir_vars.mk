@@ -12,15 +12,15 @@ O_SRCS += \
 ../myFifo.o 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC1.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/FIFO1.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC1.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/FIFO1.c \
 ../Lab8Main.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c \
 ../UART1.c \
 ../UART2.c 
 
@@ -77,15 +77,15 @@ C_DEPS__QUOTED += \
 "UART2.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC1.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/FIFO1.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC1.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/FIFO1.c" \
 "../Lab8Main.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c" \
 "../UART1.c" \
 "../UART2.c" 
 

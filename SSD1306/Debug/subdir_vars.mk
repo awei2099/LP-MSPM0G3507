@@ -12,10 +12,10 @@ CMD_SRCS += \
 ../mspm0g3507.cmd 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/I2C.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SSD1306.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/I2C.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SSD1306.c \
 ../SSD1306testmain.c 
 
 C_DEPS += \
@@ -50,10 +50,10 @@ EXE_SRCS__QUOTED += \
 "../BmpConvert.exe" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/I2C.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SSD1306.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/I2C.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SSD1306.c" \
 "../SSD1306testmain.c" 
 
 

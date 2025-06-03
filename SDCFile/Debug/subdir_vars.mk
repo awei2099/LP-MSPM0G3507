@@ -9,14 +9,14 @@ CMD_SRCS += \
 ../mspm0g3507.cmd 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
 ../SDCFile.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c \
 ../ST7735_SDC.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c \
 ../diskio.c \
 ../ff.c 
 
@@ -69,14 +69,14 @@ C_DEPS__QUOTED += \
 "ff.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
 "../SDCFile.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c" \
 "../ST7735_SDC.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c" \
 "../diskio.c" \
 "../ff.c" 
 

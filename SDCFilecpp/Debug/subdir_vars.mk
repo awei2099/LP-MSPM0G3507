@@ -6,14 +6,14 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.cpp \
 ../SDCFile.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.cpp \
 ../ST7735_SDC.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.cpp \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.cpp \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.cpp \
 ../diskio.cpp \
 ../ff.cpp 
 
@@ -69,14 +69,14 @@ CPP_DEPS__QUOTED += \
 "ff.d" 
 
 CPP_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/DAC.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/DAC.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.cpp" \
 "../SDCFile.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.cpp" \
 "../ST7735_SDC.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/TExaS.cpp" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/TExaS.cpp" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.cpp" \
 "../diskio.cpp" \
 "../ff.cpp" 
 

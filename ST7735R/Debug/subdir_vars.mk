@@ -12,11 +12,11 @@ CMD_SRCS += \
 ../mspm0g3507.cmd 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Arabic.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Arabic.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c \
 ../ST7735Rtestmain.c 
 
 C_DEPS += \
@@ -52,11 +52,11 @@ C_DEPS__QUOTED += \
 "ST7735Rtestmain.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Arabic.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SPI.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ST7735.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Arabic.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SPI.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ST7735.c" \
 "../ST7735Rtestmain.c" 
 
 EXE_SRCS__QUOTED += \

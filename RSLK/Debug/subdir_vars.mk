@@ -9,17 +9,17 @@ CMD_SRCS += \
 ../mspm0g3507.cmd 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Bump.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/I2C.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/InputCapture.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Motor.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/PWM1.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Bump.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/I2C.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/InputCapture.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Motor.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/PWM1.c \
 ../RSLKmain.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SSD1306.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SSD1306.c \
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c 
 
 C_DEPS += \
 ./ADC.d \
@@ -74,16 +74,16 @@ C_DEPS__QUOTED += \
 "Timer.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/ADC.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Bump.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/I2C.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/InputCapture.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Motor.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/PWM1.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/ADC.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Bump.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/I2C.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/InputCapture.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Motor.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/PWM1.c" \
 "../RSLKmain.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/SSD1306.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Timer.c" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/SSD1306.c" \
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Timer.c" 
 
 

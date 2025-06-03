@@ -12,7 +12,7 @@ S_SRCS += \
 ../Toggle.s 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c 
 
 S_DEPS += \
 ./Toggle.d 
@@ -35,7 +35,7 @@ S_DEPS__QUOTED += \
 "Toggle.d" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/LaunchPad.c" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" 
 
 S_SRCS__QUOTED += \
 "../Toggle.s" 
