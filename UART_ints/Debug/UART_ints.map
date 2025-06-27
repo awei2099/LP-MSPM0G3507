@@ -1,7 +1,7 @@
 ******************************************************************************
-            TI ARM Clang Linker PC v4.0.1                      
+            TI ARM Clang Linker PC v4.0.2                      
 ******************************************************************************
->> Linked Thu Dec 26 10:03:53 2024
+>> Linked Tue Jun 24 14:37:37 2025
 
 OUTPUT FILE NAME:   <UART_ints.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000223d
@@ -148,10 +148,11 @@ section   page    origin      length       input sections
                   00002504    00000008            : printf.c.obj (.text._outs)
                   0000250c    00000008            : fseek.c.obj (.text.fseek)
                   00002514    00000008     libsysbm.a : remove.c.obj (.text.remove)
-                  0000251c    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
-                  00002520    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
-                  00002524    00000004            : exit.c.obj (.text:abort)
-                  00002528    00000008     --HOLE-- [fill = 0]
+                  0000251c    00000006     libc.a : exit.c.obj (.text:abort)
+                  00002522    00000004     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  00002526    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  0000252a    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  0000252e    00000002     --HOLE-- [fill = 0]
 
 .cinit     0    000026d0    00000090     
                   000026d0    00000068     (.cinit..data.load) [load image, compression = lzss]
@@ -162,14 +163,14 @@ section   page    origin      length       input sections
 
 .rodata    0    00002530    000001a0     
                   00002530    00000101     libc.a : aeabi_ctype.S.obj (.rodata:__aeabi_ctype_table_)
-                  00002631    00000039     UARTintsTestmain.o (.rodata.str1.150090799376123501881)
-                  0000266a    00000021     UARTintsTestmain.o (.rodata.str1.17321296579030194931)
-                  0000268b    00000011     libc.a : _printfi.c.obj (.rodata.str1.103488685894817597201)
-                  0000269c    00000011            : _printfi.c.obj (.rodata.str1.153638888446227384661)
-                  000026ad    00000011     UARTintsTestmain.o (.rodata.str1.36611827487911654311)
-                  000026be    00000006     UART.o (.rodata.str1.158764475636130151761)
-                  000026c4    00000005     UART.o (.rodata.str1.5272401820622309811)
-                  000026c9    00000002     UART.o (.rodata.str1.36758956214217853981)
+                  00002631    00000039     UARTintsTestmain.o (.rodata.str1.10868633491784501400.1)
+                  0000266a    00000021     UARTintsTestmain.o (.rodata.str1.17319627679542116305.1)
+                  0000268b    00000011     libc.a : _printfi.c.obj (.rodata.str1.10348868589481759720.1)
+                  0000269c    00000011            : _printfi.c.obj (.rodata.str1.15363888844622738466.1)
+                  000026ad    00000011     UARTintsTestmain.o (.rodata.str1.7618206440322603964.1)
+                  000026be    00000006     UART.o (.rodata.str1.17925092734152304540.1)
+                  000026c4    00000005     UART.o (.rodata.str1.6221462180413253723.1)
+                  000026c9    00000002     UART.o (.rodata.str1.13172416000939458771.1)
                   000026cb    00000005     --HOLE-- [fill = 0]
 
 .init_array 
@@ -240,7 +241,7 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         60     192       0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
        _printfi.c.obj                 2166   34        0      
        memory.c.obj                   702    0         5      
        fopen.c.obj                    556    0         0      
@@ -257,8 +258,8 @@ MODULE SUMMARY
        printf.c.obj                   108    0         0      
        _io_perm.c.obj                 100    0         0      
        fflush.c.obj                   82     0         0      
+       exit.c.obj                     58     0         8      
        atoi.c.obj                     64     0         0      
-       exit.c.obj                     56     0         8      
        autoinit.c.obj                 60     0         0      
        boot_cortex_m.c.obj            40     0         0      
        memccpy.c.obj                  34     0         0      
@@ -271,9 +272,9 @@ MODULE SUMMARY
        _lock.c.obj                    2      0         8      
        pre_init.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         5358   291       429    
+       Total:                         5360   291       429    
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
        trgmsg.c.obj                   104    0         288    
        add_device.c.obj               236    0         1      
        host_device.c.obj              0      0         200    
@@ -290,10 +291,11 @@ MODULE SUMMARY
        lseek.c.obj                    40     0         0      
        write.c.obj                    40     0         0      
        remove.c.obj                   8      0         0      
+       hostexit.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         1372   0         498    
+       Total:                         1376   0         498    
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
        udivmoddi4.S.obj               162    0         0      
        aeabi_uidivmod.S.obj           64     0         0      
        muldsi3.S.obj                  58     0         0      
@@ -310,7 +312,7 @@ MODULE SUMMARY
        Stack:                         0      0         512    
        Linker Generated:              0      140       0      
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   9314   743       2059   
+       Grand Total:                   9320   743       2059   
 
 
 LINKER GENERATED COPY TABLES
@@ -337,7 +339,7 @@ address   name
 00002315  AES_IRQHandler                
 00001fc5  ActivatePortA_B               
 202005f8  BusFreq                       
-00002524  C$$EXIT                       
+00002522  C$$EXIT                       
 00002091  C$$IO$$                       
 00002315  CANFD0_IRQHandler             
 00002425  Clock_Delay                   
@@ -350,6 +352,7 @@ address   name
 00002315  GROUP0_IRQHandler             
 00002315  GROUP1_IRQHandler             
 00001dbd  HOSTclose                     
+00002523  HOSTexit                      
 000016ad  HOSTlseek                     
 00001925  HOSTopen                      
 00001a3d  HOSTread                      
@@ -363,7 +366,7 @@ address   name
 00002315  NMI_Handler                   
 00002315  PendSV_Handler                
 00002315  RTC_IRQHandler                
-0000251d  Reset_Handler                 
+00002527  Reset_Handler                 
 00001c41  RxFifo_Get                    
 000023b1  RxFifo_Init                   
 00001c8d  RxFifo_Put                    
@@ -475,9 +478,9 @@ UNDEFED   __mpu_init
 202005a0  _stream                       
 20200238  _sys_memory                   
 UNDEFED   _system_post_cinit            
-00002521  _system_pre_init              
+0000252b  _system_pre_init              
 20200608  _unlock                       
-00002525  abort                         
+0000251d  abort                         
 00000eed  add_device                    
 00000ce1  aligned_alloc                 
 2020022c  area                          
@@ -663,10 +666,11 @@ address   name
 000024f5  __aeabi_memcpy8               
 0000250d  fseek                         
 00002515  remove                        
-0000251d  Reset_Handler                 
-00002521  _system_pre_init              
-00002524  C$$EXIT                       
-00002525  abort                         
+0000251d  abort                         
+00002522  C$$EXIT                       
+00002523  HOSTexit                      
+00002527  Reset_Handler                 
+0000252b  _system_pre_init              
 00002530  __aeabi_ctype_table_          
 00002530  __aeabi_ctype_table_C         
 00002738  __TI_Handler_Table_Base       
@@ -709,4 +713,4 @@ ffffffff  binit
 UNDEFED   __mpu_init                    
 UNDEFED   _system_post_cinit            
 
-[185 symbols]
+[186 symbols]

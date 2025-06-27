@@ -14,7 +14,8 @@ C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/msp.s
 
 C_SRCS += \
 C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c \
-C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c \
+../NotGate.c 
 
 S_DEPS += \
 ./NotGate.d \
@@ -22,7 +23,8 @@ S_DEPS += \
 
 C_DEPS += \
 ./Clock.d \
-./LaunchPad.d 
+./LaunchPad.d \
+./NotGate.d 
 
 OBJS += \
 ./Clock.o \
@@ -38,7 +40,8 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "Clock.d" \
-"LaunchPad.d" 
+"LaunchPad.d" \
+"NotGate.d" 
 
 S_DEPS__QUOTED += \
 "NotGate.d" \
@@ -46,7 +49,8 @@ S_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" \
-"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/LaunchPad.c" \
+"../NotGate.c" 
 
 S_SRCS__QUOTED += \
 "../NotGate.s" \

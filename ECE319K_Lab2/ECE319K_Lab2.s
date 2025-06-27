@@ -16,7 +16,7 @@
         .thumb
         .align 2
         .global EID
-EID:    .string "ZZZ123" // replace ZZZ123 with your EID here
+EID:    .string "AYW425" // replace ZZZ123 with your EID here
         .align 2
 
 // this allow your Lab2 programs to the Lab2 grader
@@ -39,7 +39,7 @@ Lab2:
 //   configure interrupts  on TIMERG0 for grader or TIMERG7 for TExaS
 //   initialize ADC0 PB20 for scope,
 //   initialize UART0 for grader or TExaS
-     MOVS R0,#0
+     MOVS R0,#1
 // 0 for info,
 // 1 debug with logic analyzer,
 // 2 debug with scope,
@@ -49,7 +49,8 @@ Lab2:
      BL   Debug_Init // your Lab3 (ignore this line while doing Lab 2)
      BL   Lab2Init
 loop:
-   
+     LDR R0, =800000
+     BL   Delay // Delay for 10 ms
      B    loop
 
 
@@ -59,7 +60,20 @@ loop:
 // Set GPIOB_DOE31_0 for your output (be friendly)
 Lab2Init:
 // ***do not reset/power Port A or Port B, already done****
+   LDR  R0, =IOMUXPB3
+   MOVS R1, #0
+   STR  R1, [R0]
 
+   LDR  R0, =IOMUXPB17
+   MOVS R1, #0
+   STR  R1, [R0]
+
+   LDR  R0, =GPIOB_DOE31_0
+   LDR  R1, [R0]
+   LDR  R2, =LEDmask
+   ORRS R1, R1, R2
+   STR  R1, [R0]
+   
    BX   LR
 
 

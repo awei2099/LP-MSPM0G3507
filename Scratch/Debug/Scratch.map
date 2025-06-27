@@ -1,7 +1,7 @@
 ******************************************************************************
-            TI ARM Clang Linker PC v4.0.1                      
+            TI ARM Clang Linker PC v4.0.2                      
 ******************************************************************************
->> Linked Thu Dec 26 10:03:39 2024
+>> Linked Tue Jun 24 14:37:26 2025
 
 OUTPUT FILE NAME:   <Scratch.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 000000c1
@@ -11,7 +11,7 @@ MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00020000  00000130  0001fed0  R  X
+  FLASH                 00000000   00020000  00000138  0001fec8  R  X
   SRAM                  20200000   00008000  00000200  00007e00  RW X
   BCR_CONFIG            41c00000   00000080  00000000  00000080  R   
   BSL_CONFIG            41c00100   00000080  00000000  00000080  R   
@@ -21,9 +21,9 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00000130   00000130    r-x
+00000000    00000000    00000138   00000138    r-x
   00000000    00000000    000000c0   000000c0    r-- .intvecs
-  000000c0    000000c0    00000070   00000070    r-x .text
+  000000c0    000000c0    00000078   00000078    r-x .text
 20207e00    20207e00    00000200   00000000    rw-
   20207e00    20207e00    00000200   00000000    rw- .stack
 
@@ -36,15 +36,16 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    000000c0     
                   00000000    000000c0     startup_mspm0g3507_ticlang.o (.intvecs)
 
-.text      0    000000c0    00000070     
+.text      0    000000c0    00000078     
                   000000c0    00000020     libc.a : boot_cortex_m.c.obj (.text:_c_int00_noinit_noargs)
                   000000e0    0000001c     startup_mspm0g3507_ticlang.o (.text.Default_Handler)
                   000000fc    0000001c     startup_mspm0g3507_ticlang.o (.text.HardFault_Handler)
                   00000118    0000000a     main.o (.text.main)
-                  00000122    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
-                  00000126    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
-                  0000012a    00000004            : exit.c.obj (.text:abort)
-                  0000012e    00000002     --HOLE-- [fill = 0]
+                  00000122    00000006     libc.a : exit.c.obj (.text:abort)
+                  00000128    00000004     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  0000012c    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  00000130    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  00000134    00000004     --HOLE-- [fill = 0]
 
 .cinit     0    00000000    00000000     
 
@@ -77,16 +78,21 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         60     192       0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
        boot_cortex_m.c.obj            32     0         0      
-       exit.c.obj                     4      0         0      
+       exit.c.obj                     6      0         0      
        pre_init.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         40     0         0      
+       Total:                         42     0         0      
+                                                              
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
+       hostexit.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         4      0         0      
                                                               
        Stack:                         0      0         512    
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   110    192       512    
+       Grand Total:                   116    192       512    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -96,20 +102,21 @@ address   name
 000000e1  ADC0_IRQHandler         
 000000e1  ADC1_IRQHandler         
 000000e1  AES_IRQHandler          
-0000012a  C$$EXIT                 
+00000128  C$$EXIT                 
 000000e1  CANFD0_IRQHandler       
 000000e1  DAC0_IRQHandler         
 000000e1  DMA_IRQHandler          
 000000e1  Default_Handler         
 000000e1  GROUP0_IRQHandler       
 000000e1  GROUP1_IRQHandler       
+00000129  HOSTexit                
 000000fd  HardFault_Handler       
 000000e1  I2C0_IRQHandler         
 000000e1  I2C1_IRQHandler         
 000000e1  NMI_Handler             
 000000e1  PendSV_Handler          
 000000e1  RTC_IRQHandler          
-00000123  Reset_Handler           
+0000012d  Reset_Handler           
 000000e1  SPI0_IRQHandler         
 000000e1  SPI1_IRQHandler         
 000000e1  SVC_Handler             
@@ -151,8 +158,8 @@ UNDEFED   __mpu_init
 20200000  __stop___llvm_prf_bits  
 20200000  __stop___llvm_prf_cnts  
 000000c1  _c_int00_noinit_noargs  
-00000127  _system_pre_init        
-0000012b  abort                   
+00000131  _system_pre_init        
+00000123  abort                   
 ffffffff  binit                   
 00000000  interruptVectors        
 00000119  main                    
@@ -208,10 +215,11 @@ address   name
 000000e1  UART3_IRQHandler        
 000000fd  HardFault_Handler       
 00000119  main                    
-00000123  Reset_Handler           
-00000127  _system_pre_init        
-0000012a  C$$EXIT                 
-0000012b  abort                   
+00000123  abort                   
+00000128  C$$EXIT                 
+00000129  HOSTexit                
+0000012d  Reset_Handler           
+00000131  _system_pre_init        
 00000200  __STACK_SIZE            
 20200000  __start___llvm_prf_bits 
 20200000  __start___llvm_prf_cnts 
@@ -226,4 +234,4 @@ ffffffff  __binit__
 ffffffff  binit                   
 UNDEFED   __mpu_init              
 
-[63 symbols]
+[64 symbols]

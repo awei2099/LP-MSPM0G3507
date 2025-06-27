@@ -1,7 +1,7 @@
 ******************************************************************************
-            TI ARM Clang Linker PC v4.0.1                      
+            TI ARM Clang Linker PC v4.0.2                      
 ******************************************************************************
->> Linked Thu Dec 26 11:36:11 2024
+>> Linked Tue Jun 24 14:37:09 2025
 
 OUTPUT FILE NAME:   <ECE319K_Lab9H.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00001cf5
@@ -138,10 +138,11 @@ section   page    origin      length       input sections
                   00001ee6    00000002     --HOLE-- [fill = 0]
                   00001ee8    00000008     libclang_rt.builtins.a : aeabi_memcpy.S.obj (.text.__aeabi_memcpy)
                   00001ef0    00000008     libsysbm.a : remove.c.obj (.text.remove)
-                  00001ef8    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
-                  00001efc    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
-                  00001f00    00000004            : exit.c.obj (.text:abort)
-                  00001f04    0000000c     --HOLE-- [fill = 0]
+                  00001ef8    00000006     libc.a : exit.c.obj (.text:abort)
+                  00001efe    00000004     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  00001f02    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  00001f06    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  00001f0a    00000006     --HOLE-- [fill = 0]
 
 .cinit     0    00002518    000000c0     
                   00002518    00000098     (.cinit..data.load) [load image, compression = lzss]
@@ -154,7 +155,7 @@ section   page    origin      length       input sections
                   00001f10    000004fb     ST7735.o (.rodata._ZL4Font)
                   0000240b    0000003b     ST7735.o (.rodata._ZL5Rcmd1)
                   00002446    0000002b     ST7735.o (.rodata._ZL5Rcmd3)
-                  00002471    00000016     ST7735.o (.rodata.str1.7137011519891661121)
+                  00002471    00000016     ST7735.o (.rodata.str1.14736978382213673245.1)
                   00002487    0000000d     ST7735.o (.rodata._ZL10Rcmd2green)
                   00002494    0000000d     ST7735.o (.rodata._ZL8Rcmd2red)
                   000024a1    0000000a     Lab9HMain.o (.rodata._ZL14Goodbye_French)
@@ -163,16 +164,16 @@ section   page    origin      length       input sections
                   000024be    00000008     Lab9HMain.o (.rodata._ZL15Goodbye_English)
                   000024c6    00000008     Lab9HMain.o (.rodata._ZL16Language_English)
                   000024ce    00000008     Lab9HMain.o (.rodata._ZL16Language_Spanish)
-                  000024d6    00000008     ST7735.o (.rodata.str1.136023365631204765021)
+                  000024d6    00000008     ST7735.o (.rodata.str1.7209918599617305731.1)
                   000024de    00000007     Lab9HMain.o (.rodata._ZL13Hello_Spanish)
-                  000024e5    00000007     ST7735.o (.rodata.str1.25600965649401772581)
-                  000024ec    00000007     ST7735.o (.rodata.str1.66696607389504931531)
+                  000024e5    00000007     ST7735.o (.rodata.str1.10208736415454880443.1)
+                  000024ec    00000007     ST7735.o (.rodata.str1.8723687351022562626.1)
                   000024f3    00000006     Lab9HMain.o (.rodata._ZL13Hello_English)
                   000024f9    00000006     Lab9HMain.o (.rodata._ZL15Goodbye_Spanish)
                   000024ff    00000006     Lab9HMain.o (.rodata._ZL18Goodbye_Portuguese)
                   00002505    00000005     Lab9HMain.o (.rodata._ZL12Hello_French)
                   0000250a    00000004     Lab9HMain.o (.rodata._ZL16Hello_Portuguese)
-                  0000250e    00000002     ST7735.o (.rodata.str1.142252733016884761311)
+                  0000250e    00000002     ST7735.o (.rodata.str1.18358205720993799461.1)
 
 .init_array 
 *          0    00002510    00000008     
@@ -250,7 +251,7 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         60     192       0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
        memory.c.obj                   702    0         5      
        fopen.c.obj                    556    0         0      
        defs.c.obj                     0      0         404    
@@ -261,7 +262,7 @@ MODULE SUMMARY
        fclose.c.obj                   124    0         0      
        autoinit.c.obj                 84     0         0      
        fflush.c.obj                   82     0         0      
-       exit.c.obj                     56     0         8      
+       exit.c.obj                     58     0         8      
        boot_cortex_m.c.obj            40     0         0      
        copy_zero_init.c.obj           22     0         0      
        copy_decompress_none.c.obj     18     0         0      
@@ -270,9 +271,9 @@ MODULE SUMMARY
        _lock.c.obj                    2      0         8      
        pre_init.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         2366   0         425    
+       Total:                         2368   0         425    
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
        trgmsg.c.obj                   104    0         288    
        add_device.c.obj               236    0         1      
        host_device.c.obj              0      0         200    
@@ -288,10 +289,11 @@ MODULE SUMMARY
        unlink.c.obj                   44     0         0      
        write.c.obj                    40     0         0      
        remove.c.obj                   8      0         0      
+       hostexit.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         1332   0         498    
+       Total:                         1336   0         498    
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
        aeabi_uidivmod.S.obj           64     0         0      
        aeabi_memset.S.obj             12     0         0      
        aeabi_memcpy.S.obj             8      0         0      
@@ -303,7 +305,7 @@ MODULE SUMMARY
        Stack:                         0      0         512    
        Linker Generated:              0      188       0      
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   7746   1920      2060   
+       Grand Total:                   7752   1920      2060   
 
 
 LINKER GENERATED COPY TABLES
@@ -329,7 +331,7 @@ address   name
 00001d61  ADC1_IRQHandler             
 00001d61  AES_IRQHandler              
 20200204  BusFreq                     
-00001f00  C$$EXIT                     
+00001efe  C$$EXIT                     
 00001b21  C$$IO$$                     
 00001d61  CANFD0_IRQHandler           
 00001d61  DAC0_IRQHandler             
@@ -338,6 +340,7 @@ address   name
 00001d61  GROUP0_IRQHandler           
 00001d61  GROUP1_IRQHandler           
 000017a9  HOSTclose                   
+00001eff  HOSTexit                    
 000013a5  HOSTlseek                   
 0000154d  HOSTopen                    
 000015ad  HOSTread                    
@@ -353,7 +356,7 @@ address   name
 00001d61  PendSV_Handler              
 202001b8  Phrases                     
 00001d61  RTC_IRQHandler              
-00001ef9  Reset_Handler               
+00001f03  Reset_Handler               
 00002510  SHT$$INIT_ARRAY$$Base       
 00002514  SHT$$INIT_ARRAY$$Limit      
 00001d61  SPI0_IRQHandler             
@@ -471,9 +474,9 @@ UNDEFED   __mpu_init
 20200168  _stream                     
 20200230  _sys_memory                 
 UNDEFED   _system_post_cinit          
-00001efd  _system_pre_init            
+00001f07  _system_pre_init            
 20200218  _unlock                     
-00001f01  abort                       
+00001ef9  abort                       
 000009a5  add_device                  
 00000799  aligned_alloc               
 ffffffff  binit                       
@@ -624,10 +627,11 @@ address   name
 00001ee9  __aeabi_memcpy4             
 00001ee9  __aeabi_memcpy8             
 00001ef1  remove                      
-00001ef9  Reset_Handler               
-00001efd  _system_pre_init            
-00001f00  C$$EXIT                     
-00001f01  abort                       
+00001ef9  abort                       
+00001efe  C$$EXIT                     
+00001eff  HOSTexit                    
+00001f03  Reset_Handler               
+00001f07  _system_pre_init            
 00002510  SHT$$INIT_ARRAY$$Base       
 00002514  SHT$$INIT_ARRAY$$Limit      
 000025b0  __TI_Handler_Table_Base     
@@ -672,4 +676,4 @@ ffffffff  binit
 UNDEFED   __mpu_init                  
 UNDEFED   _system_post_cinit          
 
-[170 symbols]
+[171 symbols]

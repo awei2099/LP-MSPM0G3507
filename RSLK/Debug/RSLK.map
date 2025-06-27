@@ -1,7 +1,7 @@
 ******************************************************************************
-            TI ARM Clang Linker PC v4.0.1                      
+            TI ARM Clang Linker PC v4.0.2                      
 ******************************************************************************
->> Linked Thu Dec 26 10:03:32 2024
+>> Linked Tue Jun 24 14:37:19 2025
 
 OUTPUT FILE NAME:   <RSLK.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00001241
@@ -11,7 +11,7 @@ MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00020000  00001978  0001e688  R  X
+  FLASH                 00000000   00020000  00001980  0001e680  R  X
   SRAM                  20200000   00008000  00000680  00007980  RW X
   BCR_CONFIG            41c00000   00000080  00000000  00000080  R   
   BSL_CONFIG            41c00100   00000080  00000000  00000080  R   
@@ -21,11 +21,11 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00001978   00001978    r-x
+00000000    00000000    00001980   00001980    r-x
   00000000    00000000    000000c0   000000c0    r-- .intvecs
-  000000c0    000000c0    000012f0   000012f0    r-x .text
-  000013b0    000013b0    00000598   00000598    r-- .rodata
-  00001948    00001948    00000030   00000030    r-- .cinit
+  000000c0    000000c0    000012f8   000012f8    r-x .text
+  000013b8    000013b8    00000598   00000598    r-- .rodata
+  00001950    00001950    00000030   00000030    r-- .cinit
 20200000    20200000    00000480   00000000    rw-
   20200000    20200000    00000470   00000000    rw- .bss
   20200470    20200470    00000010   00000000    rw- .data
@@ -41,7 +41,7 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    000000c0     
                   00000000    000000c0     startup_mspm0g3507_ticlang.o (.intvecs)
 
-.text      0    000000c0    000012f0     
+.text      0    000000c0    000012f8     
                   000000c0    000001f8     RSLKmain.o (.text.main)
                   000002b8    000001ec     SSD1306.o (.text.SSD1306_OutUDec)
                   000004a4    000001b4     Clock.o (.text.Clock_Init80MHz)
@@ -88,35 +88,37 @@ section   page    origin      length       input sections
                   00001382    0000000e            : memset16.S.obj (.text:TI_memset_small)
                   00001390    0000000c     libclang_rt.builtins.a : aeabi_memset.S.obj (.text.__aeabi_memclr)
                   0000139c    00000008                            : aeabi_memcpy.S.obj (.text.__aeabi_memcpy)
-                  000013a4    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
-                  000013a8    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
-                  000013ac    00000004            : exit.c.obj (.text:abort)
+                  000013a4    00000006     libc.a : exit.c.obj (.text:abort)
+                  000013aa    00000004     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  000013ae    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  000013b2    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  000013b6    00000002     --HOLE-- [fill = 0]
 
-.cinit     0    00001948    00000030     
-                  00001948    0000000c     (__TI_handler_table)
-                  00001954    0000000b     (.cinit..data.load) [load image, compression = lzss]
-                  0000195f    00000001     --HOLE-- [fill = 0]
-                  00001960    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00001968    00000010     (__TI_cinit_table)
+.cinit     0    00001950    00000030     
+                  00001950    0000000c     (__TI_handler_table)
+                  0000195c    0000000b     (.cinit..data.load) [load image, compression = lzss]
+                  00001967    00000001     --HOLE-- [fill = 0]
+                  00001968    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00001970    00000010     (__TI_cinit_table)
 
-.rodata    0    000013b0    00000598     
-                  000013b0    00000540     SSD1306.o (.rodata.ASCII)
-                  000018f0    00000008     RSLKmain.o (.rodata.str1.130287076001348795731)
-                  000018f8    00000008     RSLKmain.o (.rodata.str1.36783619028405031071)
-                  00001900    00000008     RSLKmain.o (.rodata.str1.8776400388797745851)
-                  00001908    00000008     RSLKmain.o (.rodata.str1.98342304241354514501)
-                  00001910    00000007     SSD1306.o (.rodata.init5)
-                  00001917    00000007     RSLKmain.o (.rodata.str1.125072312101029218121)
-                  0000191e    00000005     SSD1306.o (.rodata.dlist1)
-                  00001923    00000005     SSD1306.o (.rodata.init1)
-                  00001928    00000005     SSD1306.o (.rodata.init2)
-                  0000192d    00000005     SSD1306.o (.rodata.init3)
-                  00001932    00000005     SSD1306.o (.rodata.str1.143925910585961552051)
-                  00001937    00000004     SSD1306.o (.rodata.init4b)
-                  0000193b    00000004     SSD1306.o (.rodata.str1.109230580551698854871)
-                  0000193f    00000003     SSD1306.o (.rodata.str1.163222921506287753241)
-                  00001942    00000003     SSD1306.o (.rodata.str1.47823329905444980131)
-                  00001945    00000003     --HOLE-- [fill = 0]
+.rodata    0    000013b8    00000598     
+                  000013b8    00000540     SSD1306.o (.rodata.ASCII)
+                  000018f8    00000008     RSLKmain.o (.rodata.str1.3211286794169475783.1)
+                  00001900    00000008     RSLKmain.o (.rodata.str1.3255192997719211536.1)
+                  00001908    00000008     RSLKmain.o (.rodata.str1.4998098946404043824.1)
+                  00001910    00000008     RSLKmain.o (.rodata.str1.7322125149181744393.1)
+                  00001918    00000007     SSD1306.o (.rodata.init5)
+                  0000191f    00000007     RSLKmain.o (.rodata.str1.17041395477970552647.1)
+                  00001926    00000005     SSD1306.o (.rodata.dlist1)
+                  0000192b    00000005     SSD1306.o (.rodata.init1)
+                  00001930    00000005     SSD1306.o (.rodata.init2)
+                  00001935    00000005     SSD1306.o (.rodata.init3)
+                  0000193a    00000005     SSD1306.o (.rodata.str1.14451269319768076594.1)
+                  0000193f    00000004     SSD1306.o (.rodata.init4b)
+                  00001943    00000004     SSD1306.o (.rodata.str1.10002672771383525571.1)
+                  00001947    00000003     SSD1306.o (.rodata.str1.4784759802907365934.1)
+                  0000194a    00000003     SSD1306.o (.rodata.str1.5691171415318972842.1)
+                  0000194d    00000003     --HOLE-- [fill = 0]
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
@@ -180,7 +182,7 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         60     192       0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
        copy_decompress_lzss.c.obj     124    0         0      
        autoinit.c.obj                 60     0         0      
        boot_cortex_m.c.obj            40     0         0      
@@ -188,12 +190,17 @@ MODULE SUMMARY
        memcpy16.S.obj                 18     0         0      
        copy_zero_init.c.obj           16     0         0      
        memset16.S.obj                 14     0         0      
-       exit.c.obj                     4      0         0      
+       exit.c.obj                     6      0         0      
        pre_init.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         298    0         0      
+       Total:                         300    0         0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
+       hostexit.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         4      0         0      
+                                                              
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/libclang_rt.builtins.a
        aeabi_uidivmod.S.obj           64     0         0      
        aeabi_memset.S.obj             12     0         0      
        aeabi_memcpy.S.obj             8      0         0      
@@ -204,19 +211,19 @@ MODULE SUMMARY
        Stack:                         0      0         512    
        Linker Generated:              0      47        0      
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   4846   1668      1664   
+       Grand Total:                   4852   1668      1664   
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00001968 records: 2, size/record: 8, table size: 16
-	.data: load addr=00001954, load size=0000000b bytes, run addr=20200470, run size=00000010 bytes, compression=lzss
-	.bss: load addr=00001960, load size=00000008 bytes, run addr=20200000, run size=00000470 bytes, compression=zero_init
+__TI_cinit_table @ 00001970 records: 2, size/record: 8, table size: 16
+	.data: load addr=0000195c, load size=0000000b bytes, run addr=20200470, run size=00000010 bytes, compression=lzss
+	.bss: load addr=00001968, load size=00000008 bytes, run addr=20200000, run size=00000470 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00001948 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00001950 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_decompress_lzss
 	index: 1, handler: __TI_decompress_none
 	index: 2, handler: __TI_zero_init
@@ -233,7 +240,7 @@ address   name
 00001195  Bump_In                       
 000011f1  Bump_Init                     
 20200470  BusFreq                       
-000013ac  C$$EXIT                       
+000013aa  C$$EXIT                       
 000012b1  CANFD0_IRQHandler             
 20200440  Change                        
 00001353  Clock_Delay                   
@@ -252,6 +259,7 @@ address   name
 20200444  Duty                          
 000012b1  GROUP0_IRQHandler             
 000012b1  GROUP1_IRQHandler             
+000013ab  HOSTexit                      
 000012cd  HardFault_Handler             
 000012b1  I2C0_IRQHandler               
 000012b1  I2C1_IRQHandler               
@@ -274,7 +282,7 @@ address   name
 20200458  Period0                       
 2020045c  Period1                       
 000012b1  RTC_IRQHandler                
-000013a5  Reset_Handler                 
+000013af  Reset_Handler                 
 000012b1  SPI0_IRQHandler               
 000012b1  SPI1_IRQHandler               
 00001079  SSD1306_ClearBuffer           
@@ -316,11 +324,11 @@ address   name
 00000000  __TI_ATRegion2_region_sz      
 00000000  __TI_ATRegion2_src_addr       
 00000000  __TI_ATRegion2_trg_addr       
-00001968  __TI_CINIT_Base               
-00001978  __TI_CINIT_Limit              
-00001978  __TI_CINIT_Warm               
-00001948  __TI_Handler_Table_Base       
-00001954  __TI_Handler_Table_Limit      
+00001970  __TI_CINIT_Base               
+00001980  __TI_CINIT_Limit              
+00001980  __TI_CINIT_Warm               
+00001950  __TI_Handler_Table_Base       
+0000195c  __TI_Handler_Table_Limit      
 000010b5  __TI_auto_init_nobinit_nopinit
 00000e45  __TI_decompress_lzss          
 00001341  __TI_decompress_none          
@@ -347,8 +355,8 @@ UNDEFED   __mpu_init
 20200000  __stop___llvm_prf_cnts        
 00001241  _c_int00_noargs               
 UNDEFED   _system_post_cinit            
-000013a9  _system_pre_init              
-000013ad  abort                         
+000013b3  _system_pre_init              
+000013a5  abort                         
 ffffffff  binit                         
 20200000  buffer                        
 00000000  interruptVectors              
@@ -451,15 +459,16 @@ address   name
 0000139d  __aeabi_memcpy                
 0000139d  __aeabi_memcpy4               
 0000139d  __aeabi_memcpy8               
-000013a5  Reset_Handler                 
-000013a9  _system_pre_init              
-000013ac  C$$EXIT                       
-000013ad  abort                         
-00001948  __TI_Handler_Table_Base       
-00001954  __TI_Handler_Table_Limit      
-00001968  __TI_CINIT_Base               
-00001978  __TI_CINIT_Limit              
-00001978  __TI_CINIT_Warm               
+000013a5  abort                         
+000013aa  C$$EXIT                       
+000013ab  HOSTexit                      
+000013af  Reset_Handler                 
+000013b3  _system_pre_init              
+00001950  __TI_Handler_Table_Base       
+0000195c  __TI_Handler_Table_Limit      
+00001970  __TI_CINIT_Base               
+00001980  __TI_CINIT_Limit              
+00001980  __TI_CINIT_Warm               
 20200000  __start___llvm_prf_bits       
 20200000  __start___llvm_prf_cnts       
 20200000  __stop___llvm_prf_bits        
@@ -495,4 +504,4 @@ ffffffff  binit
 UNDEFED   __mpu_init                    
 UNDEFED   _system_post_cinit            
 
-[131 symbols]
+[132 symbols]

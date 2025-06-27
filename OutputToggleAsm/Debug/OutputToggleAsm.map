@@ -1,7 +1,7 @@
 ******************************************************************************
-            TI ARM Clang Linker PC v4.0.1                      
+            TI ARM Clang Linker PC v4.0.2                      
 ******************************************************************************
->> Linked Thu Dec 26 10:03:30 2024
+>> Linked Tue Jun 24 14:37:17 2025
 
 OUTPUT FILE NAME:   <OutputToggleAsm.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 000001bd
@@ -11,7 +11,7 @@ MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00020000  00000230  0001fdd0  R  X
+  FLASH                 00000000   00020000  00000238  0001fdc8  R  X
   SRAM                  20200000   00008000  00000200  00007e00  RW X
   BCR_CONFIG            41c00000   00000080  00000000  00000080  R   
   BSL_CONFIG            41c00100   00000080  00000000  00000080  R   
@@ -21,9 +21,9 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00000230   00000230    r-x
+00000000    00000000    00000238   00000238    r-x
   00000000    00000000    000000c0   000000c0    r-- .intvecs
-  000000c0    000000c0    00000170   00000170    r-x .text
+  000000c0    000000c0    00000178   00000178    r-x .text
 20207e00    20207e00    00000200   00000000    rw-
   20207e00    20207e00    00000200   00000000    rw- .stack
 
@@ -36,7 +36,7 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    000000c0     
                   00000000    000000c0     startup_mspm0g3507_ticlang.o (.intvecs)
 
-.text      0    000000c0    00000170     
+.text      0    000000c0    00000178     
                   000000c0    0000007c     LaunchPad.o (.text.LaunchPad_Init)
                   0000013c    00000048     Toggle.o (.text)
                   00000184    00000038     LaunchPad.o (.text.ActivatePortA_B)
@@ -44,9 +44,11 @@ section   page    origin      length       input sections
                   000001dc    0000001c     startup_mspm0g3507_ticlang.o (.text.Default_Handler)
                   000001f8    0000001c     startup_mspm0g3507_ticlang.o (.text.HardFault_Handler)
                   00000214    00000010     LaunchPad.o (.text.Delay)
-                  00000224    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
-                  00000228    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
-                  0000022c    00000004            : exit.c.obj (.text:abort)
+                  00000224    00000006     libc.a : exit.c.obj (.text:abort)
+                  0000022a    00000004     libsysbm.a : hostexit.c.obj (.text.HOSTexit)
+                  0000022e    00000004     startup_mspm0g3507_ticlang.o (.text.Reset_Handler)
+                  00000232    00000004     libc.a : pre_init.c.obj (.text._system_pre_init)
+                  00000236    00000002     --HOLE-- [fill = 0]
 
 .cinit     0    00000000    00000000     
 
@@ -80,16 +82,21 @@ MODULE SUMMARY
     +--+------------------------------+------+---------+---------+
        Total:                         60     192       0      
                                                               
-    C:\ti\ccs2000\ccs\tools\compiler\ti-cgt-armllvm_4.0.1.LTS\lib\armv6m-ti-none-eabi/c/libc.a
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libc.a
        boot_cortex_m.c.obj            32     0         0      
-       exit.c.obj                     4      0         0      
+       exit.c.obj                     6      0         0      
        pre_init.c.obj                 4      0         0      
     +--+------------------------------+------+---------+---------+
-       Total:                         40     0         0      
+       Total:                         42     0         0      
+                                                              
+    C:\ti\ccs2011\ccs\tools\compiler\ti-cgt-armllvm_4.0.2.LTS\lib\armv6m-ti-none-eabi/c/libsysbm.a
+       hostexit.c.obj                 4      0         0      
+    +--+------------------------------+------+---------+---------+
+       Total:                         4      0         0      
                                                               
        Stack:                         0      0         512    
     +--+------------------------------+------+---------+---------+
-       Grand Total:                   368    192       512    
+       Grand Total:                   374    192       512    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -100,7 +107,7 @@ address   name
 000001dd  ADC1_IRQHandler         
 000001dd  AES_IRQHandler          
 00000185  ActivatePortA_B         
-0000022c  C$$EXIT                 
+0000022a  C$$EXIT                 
 000001dd  CANFD0_IRQHandler       
 000001dd  DAC0_IRQHandler         
 000001dd  DMA_IRQHandler          
@@ -108,6 +115,7 @@ address   name
 00000215  Delay                   
 000001dd  GROUP0_IRQHandler       
 000001dd  GROUP1_IRQHandler       
+0000022b  HOSTexit                
 000001f9  HardFault_Handler       
 000001dd  I2C0_IRQHandler         
 000001dd  I2C1_IRQHandler         
@@ -115,7 +123,7 @@ address   name
 000001dd  NMI_Handler             
 000001dd  PendSV_Handler          
 000001dd  RTC_IRQHandler          
-00000225  Reset_Handler           
+0000022f  Reset_Handler           
 000001dd  SPI0_IRQHandler         
 000001dd  SPI1_IRQHandler         
 000001dd  SVC_Handler             
@@ -157,8 +165,8 @@ UNDEFED   __mpu_init
 20200000  __stop___llvm_prf_bits  
 20200000  __stop___llvm_prf_cnts  
 000001bd  _c_int00_noinit_noargs  
-00000229  _system_pre_init        
-0000022d  abort                   
+00000233  _system_pre_init        
+00000225  abort                   
 ffffffff  binit                   
 00000000  interruptVectors        
 0000013c  main                    
@@ -218,10 +226,11 @@ address   name
 000001f9  HardFault_Handler       
 00000200  __STACK_SIZE            
 00000215  Delay                   
-00000225  Reset_Handler           
-00000229  _system_pre_init        
-0000022c  C$$EXIT                 
-0000022d  abort                   
+00000225  abort                   
+0000022a  C$$EXIT                 
+0000022b  HOSTexit                
+0000022f  Reset_Handler           
+00000233  _system_pre_init        
 20200000  __start___llvm_prf_bits 
 20200000  __start___llvm_prf_cnts 
 20200000  __stop___llvm_prf_bits  
@@ -235,4 +244,4 @@ ffffffff  __binit__
 ffffffff  binit                   
 UNDEFED   __mpu_init              
 
-[66 symbols]
+[67 symbols]

@@ -149,7 +149,7 @@ NotGateAsm.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
 	-$(RM) "Clock.o" "LaunchPad.o" "NotGate.o" "msp.o" "ticlang\startup_mspm0g3507_ticlang.o" 
-	-$(RM) "Clock.d" "LaunchPad.d" "ticlang\startup_mspm0g3507_ticlang.d" 
+	-$(RM) "Clock.d" "LaunchPad.d" "NotGate.d" "ticlang\startup_mspm0g3507_ticlang.d" 
 	-$(RM) "NotGate.d" "msp.d" 
 	-@echo 'Finished clean'
 	-@echo ' '

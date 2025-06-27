@@ -12,7 +12,7 @@ S_SRCS += \
 ../AssemblyExamples.s 
 
 C_SRCS += \
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c 
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c 
 
 S_DEPS += \
 ./AssemblyExamples.d 
@@ -38,6 +38,6 @@ S_SRCS__QUOTED += \
 "../AssemblyExamples.s" 
 
 C_SRCS__QUOTED += \
-"C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.c" 
+"C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.c" 
 
 
