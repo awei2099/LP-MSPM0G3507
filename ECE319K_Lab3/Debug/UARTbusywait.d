@@ -1,7 +1,7 @@
 # FIXED
 
 UARTbusywait.o: \
- C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/UARTbusywait.c \
+ C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/UARTbusywait.c \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/msp.h \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/DeviceFamily.h \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/m0p/mspm0g350x.h \
@@ -32,8 +32,8 @@ UARTbusywait.o: \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/hw_debugss.h \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h \
  C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h \
- C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/UART.h \
- C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.h
+ C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/UART.h \
+ C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.h
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/msp.h:
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/DeviceFamily.h:
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/m0p/mspm0g350x.h:
@@ -64,5 +64,5 @@ C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/hw_cpuss.h:
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/hw_debugss.h:
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/hw_sysctl.h:
 C:/ti/mspm0_sdk_2_03_00_07/source/ti/devices/msp/peripherals/m0p/sysctl/hw_sysctl_mspm0g1x0x_g3x0x.h:
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/UART.h:
-C:/Users/andyw/OneDrive/Documents/GitHub/ECE319K/inc/Clock.h:
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/UART.h:
+C:/Users/andyw/OneDrive/Documents/GitHub/LP-MSPM0G3507/inc/Clock.h:

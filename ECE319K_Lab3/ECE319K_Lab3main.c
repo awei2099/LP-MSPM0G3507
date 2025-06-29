@@ -10,7 +10,7 @@
 #include "../inc/Timer.h"
 #include "../inc/Dump.h"  // student's Lab 3
 #include <stdio.h>
-#include <string.h>
+#include <string.h> 
 const char Lab3EID[] ="ZZZ123"; // replace ZZZ123 with your EID here
 extern uint32_t DataBuffer[50];
 extern uint32_t TimeBuffer[50];
